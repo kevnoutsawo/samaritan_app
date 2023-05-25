@@ -11,6 +11,9 @@
         "projectId": "1c278e9e-5fa6-4259-ac2b-b0c50b96f901"
       }
     },
-    "owner": "kevnoutsawo"
+    "owner": "kevnoutsawo",
+    "android": {
+      "package": "com.kevnoutsawo.samaritan"
+    }
   }
 }
