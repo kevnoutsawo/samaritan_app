@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Alert, Button, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Alert, Button, StyleSheet, Text, TouchableOpacity, View, ScrollView } from "react-native";
 import { AuthStore, appSignOut } from "../../../store";
 import { useRouter } from "expo-router";
 
@@ -29,7 +29,7 @@ const Tab2Index = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <Text style={styles.title}>Paramètres</Text>
       <View style={styles.section}>
         <Text style={styles.label}>Email</Text>
@@ -70,8 +70,11 @@ const Tab2Index = () => {
         </TouchableOpacity>
       </View>
       <View style={styles.section}>
-        <Text style={styles.label}>Version de l'application</Text>
-        <Text style={styles.text}>Samaritan 0.0.1 (Prototype)</Text>
+        <Text style={styles.label}>Version : Samaritan 0.1 (Prototype)</Text>
+      </View>
+      <View style={styles.section}>
+        <Text style={styles.label}>Auteur</Text>
+        <Text style={styles.text}>Kevin Noutsawo | +(237) 6 98 51 29 00</Text>
       </View>
       <View style={styles.buttonContainer}>
         <Button
@@ -80,7 +83,7 @@ const Tab2Index = () => {
           color="#455fff"
         />
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
